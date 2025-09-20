@@ -26,7 +26,7 @@ public class User {
 	private String email;
 	@Column(name = "phone")
 	private String phone;
-	@Column(name = "birth_date")
+	@Column(name = "birth_date")//JPA faz isso por automático
 	private LocalDate birthDate;
 	@Column(name = "password")
 	private String password;

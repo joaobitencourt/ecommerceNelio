@@ -44,6 +44,17 @@ System.out.println(palavrasMaiusculas);
 ---
 
 
+## Tópico 2: JPA notCamel case
+Se você não definir o nome da coluna da tabela com a notação "@Column":
+Exemplo:
+@Column(name = "imgUrl")
+private String imgUrl 
+
+por padrão ele pega o exemple a cima é cria a cluna como sneakcase img_url.
+Mas para resolver isso é só seguir esse padrão de
+@Column(name = "imgUrl")
+private String imgUrl
+
 ## 🔗 Recursos Gerais
 
 Aqui estão alguns recursos que não se encaixam em um tópico específico mas foram extremamente úteis:
